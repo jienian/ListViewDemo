@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--头像 昵称 发表时间（静态） 发表内容 点赞，评论，转发 -->
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/profile1"
+        android:layout_margin="5dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="用户1"
+        android:textSize="26sp"
+        android:layout_toRightOf="@id/profile"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="2048-10-24"
+        android:textSize="22sp"
+        android:layout_toRightOf="@id/profile"
+        android:layout_below="@id/nickname"/>
+
+    <TextView
+        android:id="@+id/content"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="啊，多么有意义的日子呀！！"
+        android:textSize="22sp"
+        android:layout_below="@id/profile"/>
+
+    <ImageView
+        android:id="@+id/repost"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/repost"
+        android:layout_below="@id/content"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/comment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/comment"
+        android:layout_below="@id/content"
+        android:layout_toLeftOf="@id/repost"/>
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/like"
+        android:layout_below="@id/content"
+        android:layout_toLeftOf="@id/comment"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
